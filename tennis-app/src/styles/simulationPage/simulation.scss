@@ -1,0 +1,90 @@
+.options__component{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.601);
+    top: 0;
+    left: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+            z-index: 3;
+    
+    .option__list{
+        height: 55vh;
+        width: 40vw;
+        z-index: 4;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border: 2px solid whitesmoke;
+        border-radius: 15px;
+        background-color: rgba(0, 0, 0, 0.76);
+        padding: 10px 15px;
+        overflow: hidden;
+        gap: 20px;
+        input{
+            padding: 15px;
+            width: 100%;
+            font-size: 24px;
+            border-radius: 15px;
+            outline: none;
+            border: none;
+        }
+    }
+    .list{
+        height: max-content;
+ overflow-y: auto;      /* scroll toujours actif */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE / Edge ancien */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+        li{
+            padding:10px 15px ;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            &:hover{background-color: rgba(250, 235, 215, 0.205);}
+                font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  height: 100%;
+                cursor: pointer;
+                font-size: 24px;
+            
+        }
+    }
+}
+canvas{
+    cursor: pointer;
+}
+.select{
+        background-color: aqua;
+        width: 200px;
+        height: 40px;
+    }
+.btn__run{
+    background-color: #FFD369;
+    padding: 15px 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 5px;
+color: #222831;}
+.select__component{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    h2{
+        font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+        color: whitesmoke;
+    }
+}
